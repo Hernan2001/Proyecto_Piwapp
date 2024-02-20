@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_standar"
+    tools:context=".Activity7__Usuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/img_usuarioLogin"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                tools:src="@drawable/opcioninferioruser" />
+
+            <TextView
+                android:id="@+id/txt_usuarioNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left"
+                android:text="Pepito Abc Xyz ..."
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/img_btnEditarUsuario"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:alpha="0.6"
+                tools:src="@drawable/opcionconfiguracion" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/txt_btnPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/txt_btnColorVentana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color fondo"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/txt_btnElimCache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar cache"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+
+            <TextView
+                android:id="@+id/txt_btnElimCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar cuenta"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/txt_btnValrApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valorar app"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+
+            <TextView
+                android:id="@+id/txt_btnPoltPrivacidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Política privacidad"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+
+            <TextView
+                android:id="@+id/txt_btnInfApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Información app"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+            <TextView
+                android:id="@+id/txt_btnAyudaRapida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ayuda rapida"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+            <TextView
+                android:id="@+id/txt_btnVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Versión app"
+                android:textSize="16sp"
+                android:layout_margin="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/txt_btnCerrarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerrar Sesión"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_margin="12dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/verdeStandaOpaco"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/img_btnUinicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/opcioninferiorhome" />
+
+        <ImageView
+            android:id="@+id/img_btnUcrear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/opcioninferiorbox" />
+
+        <ImageView
+            android:id="@+id/img_btnUusuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/opcioninferioruser" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

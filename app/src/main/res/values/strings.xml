@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Proyecto_Piwapp_1_0</string>
+    <string name="MiLoginEmail">Email</string>
+    <string name="MiLoginPassword">Password</string>
+    <string name="Bienvenido">txtbienvenida</string>
+    <string name="Buscar">txtBusqueda</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

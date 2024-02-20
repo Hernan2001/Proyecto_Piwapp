@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_standar"
+    tools:context=".Activity8_VentanaProyecto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_nombreProyectoCop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Proyecto 1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <android.widget.Button
+                android:id="@+id/btn_editarProyecto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_click_color1"
+                android:text="Editar"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <android.widget.Button
+                android:id="@+id/btn_compartirQr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_click_color2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Compartir QR"
+                />
+            <android.widget.Button
+                android:id="@+id/btn_compartirLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_click_color2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Compartir Link"
+                />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Datos del proyecto registrado:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Número celular registrado:" />
+
+        <TextView
+            android:id="@+id/txt_numCelCop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="+51 949123789" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Mensaje principal:" />
+
+        <TextView
+            android:id="@+id/txt_mensajeCop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Hola Mundo ..." />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Mi Descripción" />
+
+        <TextView
+            android:id="@+id/txt_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Mi proyecto trata de venta de abarrotes
+            en la cual se ve todos los productos de primera necesidad ..."
+            />
+
+        <ImageView
+            android:id="@+id/img_qrCop"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@color/verdeStandaOpaco"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            app:srcCompat="@drawable/logomarca"
+            />
+
+        <TextView
+            android:id="@+id/txt_linkCop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="WWW.MiNegocio.com/dasdas/fasf/saf"
+            />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="PDF de mi Proyecto:" />
+
+        <TextView
+            android:id="@+id/txt_pathLink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:gravity="center|left"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="PathNombreProyecto.pdf"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/btn_buscarFileProyecto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_standar"
+                android:textSize="12sp"
+                android:text="Buscar"
+                />
+            <android.widget.Button
+                android:id="@+id/btn_abrirFileProyecto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_standar"
+                android:textSize="12sp"
+                android:text="Abrir"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/verdeStandaOpaco"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/img_btnPinicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/opcioninferiorhome" />
+
+        <ImageView
+            android:id="@+id/img_btnPcrear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/opcioninferiorbox" />
+
+        <ImageView
+            android:id="@+id/img_btnPusuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/opcioninferioruser" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
