@@ -12,6 +12,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
@@ -128,19 +129,32 @@ class Activity8_VentanaEdicion : AppCompatActivity() {
     }
 
     private fun borrarProyecto(uid: String, proyectoId: String) {
-        firebaseFirestore.collection("proyectos").document(uid)
-            .collection("proyectos").document(proyectoId)
-            .delete()
-            .addOnSuccessListener {
-                Toast.makeText(this, "Proyecto eliminado", Toast.LENGTH_SHORT).show()
-                finish()
-                val borrarProyectoV = Intent(this, Activity5__Inicio::class.java);
-                startActivity(borrarProyectoV)
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Confirmar")
+        builder.setMessage("¿Estás seguro de que quieres borrar este proyecto?")
 
-            }
-            .addOnFailureListener { e ->
-                e.printStackTrace()
-                Toast.makeText(this, "Error al borrar", Toast.LENGTH_SHORT).show()
-            }
+        builder.setPositiveButton("Si") { _, _ ->
+            firebaseFirestore.collection("proyectos").document(uid)
+                .collection("proyectos").document(proyectoId)
+                .delete()
+                .addOnSuccessListener {
+                    Toast.makeText(this, "Proyecto eliminado", Toast.LENGTH_SHORT).show()
+                    finish()
+                    val borrarProyectoV = Intent(this, Activity5__Inicio::class.java);
+                    startActivity(borrarProyectoV)
+
+                }
+                .addOnFailureListener { e ->
+                    e.printStackTrace()
+                    Toast.makeText(this, "Error al borrar", Toast.LENGTH_SHORT).show()
+                }
+        }
+
+        builder.setNegativeButton("No") { _, _ ->
+            // No hacer nada, el usuario decidió no borrar
+        }
+
+        val dialog = builder.create()
+        dialog.show()
     }
 }

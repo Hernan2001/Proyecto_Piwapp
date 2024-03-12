@@ -114,7 +114,7 @@
             android:layout_marginTop="5dp"
             android:textSize="18sp"
             android:textColor="@color/white"
-            android:text="+51 949123789" />
+            android:text="Número celular" />
 
         <TextView
             android:layout_width="match_parent"
@@ -137,7 +137,7 @@
             android:layout_marginTop="5dp"
             android:textSize="18sp"
             android:textColor="@color/white"
-            android:text="Hola Mundo ..." />
+            android:text="Mensaje predeterminado" />
 
         <TextView
             android:id="@+id/textView17"
@@ -161,8 +161,7 @@
             android:layout_marginTop="5dp"
             android:textSize="18sp"
             android:textColor="@color/white"
-            android:text="Mi proyecto trata de venta de abarrotes
-            en la cual se ve todos los productos de primera necesidad ..."
+            android:text="Mi proyecto es ..."
             />
 
         <ImageView
@@ -188,7 +187,7 @@
             android:layout_marginTop="5dp"
             android:textSize="20sp"
             android:textColor="@color/white"
-            android:text="WWW.MiNegocio.com/dasdas/fasf/saf"
+            android:text="WWW.MiNegocio.com/mensaje"
             />
 
         <TextView
@@ -212,7 +211,7 @@
             android:layout_margin="5dp"
             android:textSize="18sp"
             android:textColor="@color/white"
-            android:text="PathNombreProyecto.pdf"/>
+            android:text="NombrePDF.pdf"/>
 
 
         <LinearLayout

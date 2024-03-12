@@ -106,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="www.MiNegocio.com/dasdas/fasf/saf"
+                android:text="www.MiNegocioCelular.com/mensaje"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 

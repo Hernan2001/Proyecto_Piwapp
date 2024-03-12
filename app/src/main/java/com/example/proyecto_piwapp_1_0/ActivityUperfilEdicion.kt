@@ -19,9 +19,6 @@ class ActivityUperfilEdicion : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth;
     private lateinit var firebaseFirestore: FirebaseFirestore
     private lateinit var currentUser: FirebaseUser
-    private var lastBackPressTime = 0L
-    private val backPressThreshold = 2000 // Tiempo en milisegundos
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -126,34 +123,6 @@ class ActivityUperfilEdicion : AppCompatActivity() {
                 nombreU.error = "Por favor complete este campo"
                 return@setOnClickListener
             }
-            if (direccionU.text.isEmpty()) {
-                direccionU.error = "Por favor complete este campo"
-                return@setOnClickListener
-            }
-            if (generoU.text.isEmpty()) {
-                generoU.error = "Por favor complete este campo"
-                return@setOnClickListener
-            }
-            if (fechnacimientoU.text.isEmpty()) {
-                fechnacimientoU.error = "Por favor complete este campo"
-                return@setOnClickListener
-            }
-            if (paisU.text.isEmpty()) {
-                paisU.error = "Por favor complete este campo"
-                return@setOnClickListener
-            }
-            if (departamentoU.text.isEmpty()) {
-                departamentoU.error = "Por favor complete este campo"
-                return@setOnClickListener
-            }
-            if (provinciaU.text.isEmpty()) {
-                provinciaU.error = "Por favor complete este campo"
-                return@setOnClickListener
-            }
-            if (distritoU.text.isEmpty()) {
-                distritoU.error = "Por favor complete este campo"
-                return@setOnClickListener
-            }
 
             val uid = FirebaseAuth.getInstance().currentUser?.uid
             if (uid != null) {
@@ -193,13 +162,7 @@ class ActivityUperfilEdicion : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val currentTime = System.currentTimeMillis()
-        if (currentTime - lastBackPressTime > backPressThreshold) {
-            Toast.makeText(this, "Presione de nuevo para salir", Toast.LENGTH_SHORT).show()
-            lastBackPressTime = currentTime
-        } else {
-            super.onBackPressed()
-        }
+        return
     }
 
 }

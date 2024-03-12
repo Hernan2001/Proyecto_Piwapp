@@ -242,7 +242,7 @@ class Activity8_VentanaProyecto : AppCompatActivity() {
                 pathLinkF.text = pdfFileName
                 subirPDF(pdfFileName)
             } else {
-                Toast.makeText(this, "Error al obtener el nombre del archivo", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Aviso informativo: Sin subir PDF", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -330,7 +330,7 @@ class Activity8_VentanaProyecto : AppCompatActivity() {
                 }
             }
             .addOnFailureListener { e ->
-                Toast.makeText(this, "Error al obtener metadatos del PDF: ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Aviso informativo: No hay PDF subido", Toast.LENGTH_SHORT).show()
             }
     }
 
