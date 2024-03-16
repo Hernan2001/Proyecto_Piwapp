@@ -7,46 +7,59 @@
     tools:context=".MainActivity"
     android:background="@drawable/fondo_standar"
     >
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:orientation="vertical"
-    android:gravity="center">
 
     <ImageView
         android:id="@+id/img_logo_text_2"
-        android:layout_width="150dp"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/logoletra" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:lottie_rawRes="@raw/animate"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
-
-</LinearLayout>
-
-    <Button
-        android:id="@+id/txt_btnMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="626dp"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="52dp"
-        android:text="Comenzar"
-        android:textSize="25sp">
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="595dp"
+        app:srcCompat="@drawable/logoletra" />
 
-    </Button>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/animate"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+</LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/txt_btnMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="625dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/button_standar"
+        android:gravity="center"
+        android:text="Comenzar"
+        android:textColor="@color/white"
+        android:textSize="13sp">
+
+    </android.widget.Button>
 
 </RelativeLayout>
