@@ -77,5 +77,5 @@ dependencies {
     //Generador QR
     implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
     implementation ("com.google.zxing:core:3.3.0")
-
+    implementation ("com.airbnb.android:lottie:3.4.0")
 }
