@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.example.proyecto_piwapp_1_0.databinding.ActivityActivity5InicioBinding
 import com.example.proyecto_piwapp_1_0.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -67,6 +68,17 @@ class Activity5__Inicio : AppCompatActivity() {
                     // Crear un botón dinámicamente para cada proyecto
                     val btnProyecto = Button(this)
                     btnProyecto.text = nombreProyecto
+
+                    btnProyecto.setBackgroundResource(R.drawable.button_click_color1)
+                    btnProyecto.setTextColor(ContextCompat.getColor(this, android.R.color.black))
+
+                    val layoutParams = LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                    )
+                    layoutParams.setMargins(0, 0, 0, resources.getDimensionPixelSize(R.dimen.espacio_entre_botones)) // Establecer el margen inferior
+                    btnProyecto.layoutParams = layoutParams
+
                     btnProyecto.setOnClickListener {
                         // Al hacer clic en el botón, abrir Activity8_VentanaProyecto
                         val intent = Intent(this, Activity8_VentanaProyecto::class.java)
