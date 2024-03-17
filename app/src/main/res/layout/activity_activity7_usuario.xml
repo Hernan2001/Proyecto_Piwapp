@@ -19,10 +19,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="14dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="30dp"
             android:padding="15dp"
-            android:background="@color/white"
+            android:elevation="20dp"
+            android:background="@drawable/rounder_backgound"
             android:orientation="horizontal">
 
 
@@ -30,7 +34,8 @@
                 android:id="@+id/img_usuarioLogin"
                 android:layout_width="40dp"
                 android:layout_height="35dp"
-                tools:src="@drawable/opcioninferioruser" />
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/opcioninferioruser" />
 
             <TextView
                 android:id="@+id/txt_usuarioNombre"
@@ -41,15 +46,16 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:gravity="left"
+                android:textColor="@color/black"
                 android:text="Pepito Abc Xyz ..."
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/img_btnEditarUsuario"
                 android:layout_width="40dp"
                 android:layout_height="35dp"
-                android:alpha="0.6"
-                tools:src="@drawable/opcionconfiguracion" />
+                android:src="@drawable/opcionconfiguracion" />
 
 
         </LinearLayout>
@@ -57,18 +63,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@color/white"
-            >
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:elevation="20dp"
+            android:background="@drawable/rounder_backgound"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txt_btnPerfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="12dp"
                 android:text="Perfil"
-                android:textSize="16sp"
-                android:layout_margin="12dp"/>
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
 
         </LinearLayout>
@@ -77,13 +85,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@color/white">
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:elevation="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/rounder_backgound">
             <TextView
                 android:id="@+id/txt_btnColorVentana"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Color fondo"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:layout_margin="12dp"/>
         </LinearLayout>
@@ -92,8 +104,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:elevation="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounder_backgound"
             >
 
             <TextView
@@ -102,6 +117,7 @@
                 android:layout_height="wrap_content"
                 android:text="Eliminar cache"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_margin="12dp"/>
 
             <TextView
@@ -109,6 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Eliminar cuenta"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:layout_margin="12dp"/>
         </LinearLayout>
@@ -117,9 +134,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:elevation="20dp"
+            android:layout_marginTop="15dp"
             android:textSize="16sp"
-            android:background="@color/white"
+            android:background="@drawable/rounder_backgound"
             >
 
             <TextView
@@ -128,6 +148,7 @@
                 android:layout_height="wrap_content"
                 android:text="Valorar app"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_margin="12dp"/>
 
             <TextView
@@ -136,6 +157,7 @@
                 android:layout_height="wrap_content"
                 android:text="Política privacidad"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_margin="12dp"/>
 
             <TextView
@@ -144,11 +166,13 @@
                 android:layout_height="wrap_content"
                 android:text="Información app"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:layout_margin="12dp"/>
             <TextView
                 android:id="@+id/txt_btnAyudaRapida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Ayuda rapida"
                 android:textSize="16sp"
                 android:layout_margin="12dp"/>
@@ -156,6 +180,7 @@
                 android:id="@+id/txt_btnVersion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="Versión app"
                 android:textSize="16sp"
                 android:layout_margin="12dp"/>
@@ -164,10 +189,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:elevation="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounder_backgound"
             >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/baseline_close" />
 
             <TextView
                 android:id="@+id/txt_btnCerrarSesion"
@@ -175,9 +208,10 @@
                 android:layout_height="wrap_content"
                 android:text="Cerrar Sesión"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="18sp"
-                android:layout_margin="12dp"/>
-
+                android:layout_margin="12dp"
+                />
 
         </LinearLayout>
 
