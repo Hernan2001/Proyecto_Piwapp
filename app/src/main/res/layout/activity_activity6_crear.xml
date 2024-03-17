@@ -17,104 +17,113 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <android.widget.Button
-            android:id="@+id/btn_crearProyecto"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounder_backgound"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:elevation="20dp"
+        android:orientation="vertical">
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_click_color1"
-            android:layout_gravity="center"
+            android:text="Nuevo Proyecto"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_margin="30dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/txt_nombreProyecto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Crear nuevo proyecto"
-            android:textStyle="bold"
-            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:hint="Nombre de proyecto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número celular:"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/txt_numCelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:alpha="0.8"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensaje principal:"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/txt_msjprincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
             android:textSize="16sp"
+            android:alpha="0.8"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_generaQr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_verde"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/txt_linkGenerado"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="www.MiNegocioCelular.com/mensaje"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
 
-
-            <EditText
-                android:id="@+id/txt_nombreProyecto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:ems="10"
-                android:inputType="text"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:hint="Nombre de tu proyecto" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Número celular"
-                android:textSize="20sp"
-                android:layout_margin="10dp"
-                android:textColor="@color/black"
-                android:textStyle="normal"/>
-
-            <EditText
-                android:id="@+id/txt_numCelular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="phone"
-                android:textSize="16sp"
-                android:alpha="0.8"
-                android:textColor="@color/black"
-                android:layout_margin="8dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mensaje principal"
-                android:textSize="20sp"
-                android:layout_margin="10dp"
-                android:textColor="@color/black"
-                android:textStyle="normal"/>
-
-            <EditText
-                android:id="@+id/txt_msjprincipal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text"
-                android:textSize="16sp"
-                android:alpha="0.8"
-                android:textColor="@color/black"
-                android:layout_margin="8dp"/>
-
-            <ImageView
-                android:id="@+id/img_generaQr"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="@color/verdeStandaOpaco"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                />
-
-            <TextView
-                android:id="@+id/txt_linkGenerado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="www.MiNegocioCelular.com/mensaje"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+        <android.widget.Button
+            android:id="@+id/btn_crearProyecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:background="@drawable/button_click_color1"
+            android:text="Crear proyecto"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         </LinearLayout>
 
 
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
