@@ -159,7 +159,7 @@
             android:layout_marginTop="15dp"
             android:textSize="15sp"
             android:textColor="@color/black"
-            android:text="Mi Archivo del proyecto:"
+            android:text="Mi Archivo proyecto:"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"/>
 
@@ -170,10 +170,10 @@
             android:inputType="text"
             android:textSize="15sp"
             android:textColor="@color/black"
-            android:text="CatalogoAbarrotesBasicas.pdf"
             android:layout_marginTop="4dp"
             android:layout_marginRight="10dp"
-            android:layout_marginLeft="18dp"/>
+            android:layout_marginLeft="18dp"
+            android:text="CatalogoAbarrotesBasicas.pdf"/>
 
 
 
